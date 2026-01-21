@@ -1,22 +1,20 @@
 // for getting multiple practice reps in
 
-export default function example1 () {
+function example1() {
     return (
         <h1>rep1</h1>
-    ); 
+    );
 }
 
+export default example1;
 
-
-function example2 () {
+export function example2() {
     return (
         <h1>rep2</h1>
     );
 }
 
-export default example2;
-
-export default function example3 () {
+export default function example3() {
     return (
         <h1>rep3</h1>
     );
@@ -41,7 +39,7 @@ export default function example6() {
 }
 
 export default function example7() {
-    return(
+    return (
         <h1>rep7</h1>
     );
 }
@@ -61,5 +59,5 @@ export default function example9() {
 export default function example10() {
     return (
         <h1>rep10</h1>
-    )
+    );
 }
