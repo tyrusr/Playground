@@ -1,5 +1,6 @@
 import './App.css';
-import { AlertButton } from "./components/ButtonsComponentAlert"
+import React from 'react';
+import AlertButton from './components/ButtonsComponentAlert';
 
 function App() {
   return (
