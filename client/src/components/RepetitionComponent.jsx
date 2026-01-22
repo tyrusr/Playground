@@ -61,3 +61,63 @@ export default function Example10() {
         <h1>rep10</h1>
     );
 }
+
+export default function Example11() {
+    return (
+        <h1>rep11</h1>
+    );
+}
+
+export default function Example12() {
+    return (
+        <h1>rep12</h1>
+    );
+}
+
+export default function Example13() {
+    return (
+        <h1>rep13</h1>
+    );
+}
+
+export default function Example14() {
+    return (
+        <h1>rep14</h1>
+    );
+}
+
+export default function Example15() {
+    return (
+        <h1>rep15</h1>
+    );
+}
+
+export default function Example16() {
+    return (
+        <h1>rep16</h1>
+    );
+}
+
+export default function Example17() {
+    return (
+        <h1>rep17</h1>
+    );
+}
+
+export default function Example18() {
+    return (
+        <h1>rep18</h1>
+    );
+}
+
+export default function Example19() {
+    return (
+        <h1>rep19</h1>
+    );
+}
+
+export default function Example20() {
+    return (
+        <h1>rep20</h1>
+    );
+}
