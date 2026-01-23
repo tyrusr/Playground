@@ -92,3 +92,57 @@ export function useExample10() {
     };
 }
 
+const useExample11 = () => {
+    const [value, setValue] = useState(null);
+
+    return {
+        value,
+        setValue
+    };
+};
+
+export default useExample11;
+
+const useExample12 = () => {
+    const [value, setValue] = useState(null);
+
+    return {
+        value,
+        setValue
+    };
+};
+
+export default useExample12;
+
+const useExample13 = () => {
+    const [value, setValue] = useState(null);
+
+    return {
+        value,
+        setValue
+    };
+};
+
+export default useExample13;
+
+const useExample14 = () => {
+    const [value, setValue] = useState(null);
+
+    return {
+        value,
+        setValue
+    };
+};
+
+export default useExample14;
+
+const useExample15 = () => {
+    const [value, setValue] = useState(null);
+
+    return {
+        value,
+        setValue
+    };
+};
+
+export default useExample15;
