@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 // for getting multiple practice reps in
 
-export defaut function useExample1() {
+export default function useExample1() {
     const [data, setData] = useState(null);
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(false);
