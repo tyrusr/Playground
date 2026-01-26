@@ -50,3 +50,5 @@ const example2 = async (params) => {
         throw new Error (err);
     }
 };
+
+export default example2;
