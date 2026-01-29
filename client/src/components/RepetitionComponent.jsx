@@ -1,5 +1,6 @@
 // for getting multiple practice reps in
 
+
 export default function Example1() {
     return (
         <h1>rep1</h1>
@@ -72,3 +73,4 @@ export function Example10() {
         <h1>rep10</h1>
     );
 };
+
