@@ -88,3 +88,100 @@ export async function example10(req, res, next) {
         next(err);
     }
 }
+
+export async function Ex1(req, res, next) {
+    
+    const params = req.body;
+
+    try {
+        //logic
+
+        res.status().json();
+    } catch(err) {
+        next(err);
+    }
+}
+
+
+export async function ex2(req,res,next) {
+    const params = req.body;
+
+    try {
+        //logic
+
+        res.status().json();
+    } catch(err) {
+        next(err);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+export async function Ex3(req, res, next) {
+    const params = req.body();
+
+    try {
+        //logic goes here
+
+        res.status().json();
+    } catch(err) {
+        next(err);
+    }
+}
+
+export async function Ex4(req, res, next) {
+    const params = req.body();
+
+    try {
+        //logic goes here
+
+        res.status().json();
+    } catch(err) {
+        next(err);
+    }
+}
+
+export async function Ex5(req, res, next) {
+    const params = req.body();
+
+    try {
+        //logic
+
+        res.status().json();
+    } catch(err) {
+        next(err);
+    }
+}
