@@ -1,5 +1,4 @@
-export function handlePing(req, res, next) {
-    const request = req.body;
+export function handlePing(req, res) {
     const pong = "pong";
 
     try{
