@@ -1,8 +1,7 @@
 import usePracticeHook from "../hooks/usePracticeHook";
-import getData from "../hooks/usePracticeHook";
 
 export default function ComponentSample() {
-    const {data, error, loading } = usePracticeHook();
+    const {data, error, loading, getData } = usePracticeHook();
 
     function handleClick() {
         getData();
