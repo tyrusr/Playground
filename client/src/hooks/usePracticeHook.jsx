@@ -6,22 +6,18 @@ export default function usePracticeHook() {
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(false);
 
-    useEffect(() => {
-        async function getData() {
-            setLoading(true);
-            try {
-                const response = await sendRequest();
+    async function getData() {
+        setLoading(true);
+        try {
+            const response = await sendRequest();
 
-                setData(response);
-            } catch(err) {
-                setError(err);
-            } finally {
-                setLoading(false);
-            }
+            setData(response);
+        } catch(err) {
+            setError(err);
+        } finally {
+            setLoading(false);
         }
+    }
 
-        getData();
-    }, []);
-
-    return {data, error, loading};   
+    return {data, error, loading, getData};   
 }
