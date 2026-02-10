@@ -7,9 +7,7 @@ export default async function sendRequest() {
             }
         })
 
-        if (!response.ok) {
-            console.log("response was not ok from sendRequest");
-        }
+        if (!response.ok) throw new Error("response was not ok");
 
         return response.json();
     } catch (err) {
