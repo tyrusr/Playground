@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import sendRequest from "./services/practiceServices";
 
 export default function usePracticeHook() {
