@@ -1,9 +1,16 @@
+import usePracticeHook from "../hooks/usePracticeHook";
+import getData from "../hooks/usePracticeHook";
 
+export default function ComponentSample() {
+    const {data, error, loading } = usePracticeHook();
 
+    function handleClick() {
+        getData();
 
+        alert(data);
+    }
 
-//make a component
-//deconstructor that gets the stuff from hook
-//event handler that calls hook and then sends an alert when response
-//button in component
-//event listener in button
+    return (
+        <button onClick={handleClick}>Ping</button>
+    )
+}
