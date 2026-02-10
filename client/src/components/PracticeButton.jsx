@@ -10,6 +10,12 @@ export default function ComponentSample() {
     }
 
     return (
-        <button onClick={handleClick}>Ping</button>
+        <>
+            <button onClick={handleClick} disabled={loading}>
+            {loading ? "Loading" : "Ping"}
+                
+            </button>
+            {error && <h1>{error.message}</h1> }
+        </>
     )
 }
