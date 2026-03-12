@@ -1,6 +1,6 @@
 // for getting multiple practice reps in
 
-export default function getData(params) {
+export default async function getData(params) {
     const csrfToken = "get from cookies";
 
     try {
@@ -12,7 +12,7 @@ export default function getData(params) {
             },
             credentials:"include",
 
-            body: JSON.stringify({params});
+            body: JSON.stringify({params})
         })
 
         if (!response.ok) throw new Error ("response was not ok");
