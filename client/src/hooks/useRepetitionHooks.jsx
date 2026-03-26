@@ -25,5 +25,6 @@ export default function useExample(params) {
         getData(params);
 
     }, [])
-
+    
+    return { data, error, loading };
 }
