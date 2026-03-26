@@ -1,1 +1,25 @@
 // for getting multiple practice reps in
+
+
+export default function Example() {
+    //can use event handlers or use effect or other things
+
+    return(
+        <h1>rep1</h1>
+    );
+}
+
+export function Example2() {
+    return(
+        <h1>rep2</h1>
+    );
+}
+
+const Example3 = () => {
+
+    return(
+        <h1>rep3</h1>
+    )
+}
+
+export default { Example3 };
