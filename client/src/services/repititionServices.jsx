@@ -4,22 +4,26 @@ export default async function getData(params) {
     const csrfToken = "get from cookies";
 
     try {
-        const response = fetch('/route', {
+        const response = await fetch('/route', {
             method:"POST",
             headers: {
-                "Content-Type":"application/json",
+                "Content-Type": "application/json",
                 "X-CSRF-Token": csrfToken,
             },
-            credentials:"include",
+            credentials: "include",
 
             body: JSON.stringify({params})
         })
 
-        if (!response.ok) throw new Error ("response was not ok");
+        if(!response.ok) { 
+            return("response was not ok");
+        };
 
-        const res = await response.json();
+        const res = await response.json;
+
         return res;
     } catch(err) {
-        throw new Error (err);
+        return{err};
     }
+    
 }
