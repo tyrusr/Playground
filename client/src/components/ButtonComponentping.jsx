@@ -2,7 +2,8 @@ import React from "react";
 
 export default function PingButton() {
     //deconstructor
-    const istru = true;
+    const {isloading} = useRepetitionHook();
+    const istrue = true;
 
     async function handleClick() {
         //call hook await
