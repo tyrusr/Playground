@@ -1,5 +1,10 @@
 // for getting multiple practice reps in
 
-export default function Rep() {
-    <h1>hello</h1>;
+export default function rep1(params){
+    //maybe event handler for a button
+
+    return (
+        <h1>hello</h1>
+    );
 }
+

@@ -1,19 +1,20 @@
 import { useEffect, useState } from "react";
 // for getting multiple practice reps in
 
-export default function useRepetitionHook() {
-    const [data, setData] = useState(null);
-    const [error, setError] = useState(null);
-    const [loading, setLoading] = useState(false);
 
-    useEffect(() => {
-        async function getData() {
+
+export default function useRep1(params){
+    [data, setData] = useState(null);
+    [error, setError] = useState(null);
+    [loading, setLoading] = useState(false);
+
+    useEffect(()=> {
+        async function getData(params){
             setLoading(true);
             try {
-                const response = await sendRequest();
-
-                setData(response);
-            } catch (err) {
+                const res = await sampleServices();
+                setData(res);
+            } catch(err) {
                 setError(err);
             } finally {
                 setLoading(false);
@@ -22,6 +23,6 @@ export default function useRepetitionHook() {
 
         getData();
     }, []);
-    return { data, error, loading };
 
+    return { data, error, loading };
 }
