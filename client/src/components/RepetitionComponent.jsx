@@ -1,5 +1,6 @@
 // for getting multiple practice reps in
 
+<<<<<<< HEAD
 const rep1 = () => {
     //logic goes here
 
@@ -27,3 +28,4 @@ export default function rep3(){
         <h1>rep3</h1>
     );
 };
+
