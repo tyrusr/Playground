@@ -2,74 +2,73 @@ import { useEffect, useState } from "react";
 // for getting multiple practice reps in
 
 
-export default function useRep1(params) {
+export default function useRep1(params){
     const [data, setData] = useState(null);
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(false);
 
-    useEffect(() => {
+    useEffect(()=> {
+        setLoading(true);
+        async function getData(params){
+            try {
+                const data = await sampleServicesCall(params);
 
-        async function getData(params){ 
-            setLoading(true);
-            try{
-                const res = await sampleServicesCall(params);
-                setData(res);
-                
+                setData(data);
             } catch(err) {
                 setError(err);
             } finally {
-                setLoading(False);
+                setLoading(false);
             }
         }
 
-        
-        getData(params)
-        
-    },[]);
+        getData(params);
+    }, [])
 
-    return { data, error, loading }
+    return { data, error, loading };
 }
 
-
-
-export default function useRep2(params) {
-    const [data, setData] = useState(null);
-    const [error, setError] = useState(null);
-    const [loading, setLoading] = useState(false);
+export function useRep2(params){
+    const[data, setData] = useState(null);
+    const[error, setError] = useState(null);
+    const[loading, setLoading] = useState(false);
 
     async function getData(params){
         setLoading(true);
-        try {
-            const res = await sampleServicesCall(params);
-            setData(res);
+
+        try{
+            const data = await sampleServicesCall(params);
+
+            setData(data);
         } catch(err) {
             setError(err);
         } finally {
             setLoading(false);
         }
     }
-    
+
     return { data, error, loading, getData }
 }
 
-const useRep3 = () => {
-    const [data, setData] = useState(null);
-    const [error, setError] = useState(null);
-    const [loading, setLoading] = useState(false);
+const useRep3 = (params) => {
+    const[data, setData] = useState(null);
+    const[error, setError] = useState(null);
+    const[loading, setLoading] = useState(false);
 
-    async function getData(params){
+    const getData = async (params) => {
         setLoading(true);
+
         try {
-            const res = await sampleServicesCall(params);
-            setData(res);
+            const data = await sampleServicesCall(params);
+
+            setData(data);
         } catch(err) {
             setError(err);
         } finally {
             setLoading(false);
         }
     }
-    
-    return { data, error, loading, getData }
+
+    return { data, error, loading, getData };
 }
 
-export default {useRep3};
+export default { useRep3 };
