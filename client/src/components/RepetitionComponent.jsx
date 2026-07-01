@@ -1,31 +1,26 @@
 // for getting multiple practice reps in
 
-<<<<<<< HEAD
-const rep1 = () => {
-    //logic goes here
-
-    return (
+export default function rep1(){
+    
+    
+    return(
+        //try to add style with tailwind
         <h1>rep1</h1>
+        //make button here
     );
-};
-
-export default { rep1 };
-
-export function rep2(){
-    //event handler to handle button press
-        //maybe request something by a specific id
-
-    return (
-        <main> 
-            <section>rep2</section>
-            <button onClick={sample}>Push me</button>
-        </main>
-    )
 }
 
-export default function rep3(){
-    return (
+export function rep2(){
+
+    return(
+        <h1>rep2</h1>
+    );
+}
+
+const rep3 = () => {
+    return(
         <h1>rep3</h1>
     );
-};
+}
 
+export default {rep3}
